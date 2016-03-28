@@ -1,0 +1,180 @@
+{"frames": [
+
+{
+	"filename": "arr.png",
+	"frame": {"x":356,"y":539,"w":26,"h":15},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":15},
+	"sourceSize": {"w":26,"h":15}
+},
+{
+	"filename": "backHome_btn.png",
+	"frame": {"x":176,"y":444,"w":94,"h":120},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":94,"h":120},
+	"sourceSize": {"w":94,"h":120}
+},
+{
+	"filename": "close.png",
+	"frame": {"x":427,"y":2,"w":72,"h":106},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":106},
+	"sourceSize": {"w":72,"h":106}
+},
+{
+	"filename": "drug_btn.png",
+	"frame": {"x":318,"y":319,"w":83,"h":116},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":116},
+	"sourceSize": {"w":83,"h":116}
+},
+{
+	"filename": "fertilize_btn.png",
+	"frame": {"x":272,"y":444,"w":82,"h":111},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":111},
+	"sourceSize": {"w":82,"h":111}
+},
+{
+	"filename": "fill_0.png",
+	"frame": {"x":421,"y":223,"w":87,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":87,"h":75},
+	"sourceSize": {"w":87,"h":75}
+},
+{
+	"filename": "fill_1.png",
+	"frame": {"x":421,"y":300,"w":82,"h":73},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":73},
+	"sourceSize": {"w":82,"h":73}
+},
+{
+	"filename": "fill_2.png",
+	"frame": {"x":2,"y":483,"w":95,"h":81},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":95,"h":81},
+	"sourceSize": {"w":95,"h":81}
+},
+{
+	"filename": "fill_3.png",
+	"frame": {"x":429,"y":110,"w":60,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":72},
+	"sourceSize": {"w":60,"h":72}
+},
+{
+	"filename": "fill_4.png",
+	"frame": {"x":99,"y":483,"w":68,"h":77},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":68,"h":77},
+	"sourceSize": {"w":68,"h":77}
+},
+{
+	"filename": "frit.png",
+	"frame": {"x":325,"y":223,"w":94,"h":94},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":94,"h":94},
+	"sourceSize": {"w":94,"h":94}
+},
+{
+	"filename": "fruits_plane.png",
+	"frame": {"x":2,"y":2,"w":314,"h":117},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":314,"h":117},
+	"sourceSize": {"w":314,"h":117}
+},
+{
+	"filename": "gohome.png",
+	"frame": {"x":2,"y":121,"w":321,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":321,"h":98},
+	"sourceSize": {"w":321,"h":98}
+},
+{
+	"filename": "golook.png",
+	"frame": {"x":2,"y":221,"w":321,"h":95},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":321,"h":95},
+	"sourceSize": {"w":321,"h":95}
+},
+{
+	"filename": "hoeing_btn.png",
+	"frame": {"x":318,"y":2,"w":107,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":107,"h":114},
+	"sourceSize": {"w":107,"h":114}
+},
+{
+	"filename": "l_btn.png",
+	"frame": {"x":449,"y":452,"w":50,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":75},
+	"sourceSize": {"w":50,"h":75}
+},
+{
+	"filename": "pop.png",
+	"frame": {"x":2,"y":318,"w":172,"h":163},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":172,"h":163},
+	"sourceSize": {"w":172,"h":163}
+},
+{
+	"filename": "r_btn.png",
+	"frame": {"x":449,"y":375,"w":50,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":75},
+	"sourceSize": {"w":50,"h":75}
+},
+{
+	"filename": "tool_btn.png",
+	"frame": {"x":176,"y":318,"w":140,"h":124},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":140,"h":124},
+	"sourceSize": {"w":140,"h":124}
+},
+{
+	"filename": "trim_btn.png",
+	"frame": {"x":356,"y":437,"w":91,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":91,"h":100},
+	"sourceSize": {"w":91,"h":100}
+},
+{
+	"filename": "watering_btn.png",
+	"frame": {"x":325,"y":118,"w":102,"h":103},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":102,"h":103},
+	"sourceSize": {"w":102,"h":103}
+}],
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "atlas_ico.png",
+	"format": "RGBA8888",
+	"size": {"w":510,"h":566},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:114c54f35fc89ad589dc85e707dd879d$"
+}
+}

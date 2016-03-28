@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="GBK">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+    <title>我的农场-兑奖</title>
+    <script type="text/javascript" src="iscroll.js"></script>
+    <script>
+        var myScroll;
+
+        function loaded () {
+            myScroll = new IScroll('#wrapper', {
+                scrollbars: true,
+                mouseWheel: true,
+                interactiveScrollbars: true,
+                shrinkScrollbars: 'scale',
+                fadeScrollbars: true,
+                tap: true
+            });
+
+            //var num = document.getElementById("ul").getElementsByTagName("li");
+
+            /*for(var i = 0; i < num.length; i++) {
+                (function(a) {
+                    num[a].addEventListener('tap', function () {
+                       alert(num[a].innerHTML)
+                    }, false);
+                })(i);
+            }*/
+        }
+
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    </script>
+    <style>
+        *{margin:0;padding:0}
+        html, body {
+            height: 100%;
+            -webkit-text-size-adjust:none;
+        }
+        body
+        {
+            font-family: "Microsoft YaHei";
+            color:#4e4e4e;
+            margin: 0;
+            padding: 0;
+            background-image: url('assets/bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        #prize{
+            width:16.875rem;
+            height:24.65rem;
+            background-image: url('assets/prize.png');
+            background-size: 16.875rem 24.65rem;
+            position: absolute;
+            left:50%;
+            margin-left:-8.4375rem;
+            top:50%;
+            margin-top:-15rem;
+        }
+        #bar{
+            width:17.35rem;
+            height:4.1rem;
+            background-image: url('assets/bar.png');
+            background-size: 17.35rem 4.1rem;
+            position: absolute;
+            left:50%;
+            margin-left:-8.675rem;
+            top:50%;
+            margin-top:10rem;
+        }
+
+        #wrapper {
+            position: absolute;
+            z-index: 1;
+            top: 4.2rem;
+            bottom: 2rem;
+            left: 0;
+            width: 14rem;
+            left:50%;
+            margin-left:-7rem;
+            overflow: hidden;
+        }
+
+        #scroller {
+            position: absolute;
+            z-index: 1;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            width: 100%;
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -o-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+
+        #scroller ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            text-align: left;
+        }
+
+        #scroller li {
+            display:-webkit-box;
+            margin-bottom:.5rem;
+        }
+        #scroller li .img{
+            width:4.15rem;
+            height:4.15rem;
+            border: 2px solid #000;
+            background-color: aliceblue;
+            background-color: #9b9b9b;
+            color:#fff;
+            position: relative;
+        }
+        #scroller li .img{
+            text-align: center;
+            line-height: 4.15rem;
+        }
+        #scroller li .pr_tit,.pr_name{
+            font-size:.8rem;
+            font-weight: bold;
+        }
+        #scroller li .prizeContent{
+            -webkit-box-flex:1;
+            margin-left:.5rem;
+            color:#fff;
+            font-size:.8rem
+        }
+        #scroller li .prizeContent p{
+            line-height: 1.1rem;
+        }
+        .sull .prizeContent{
+            color:#000!important;
+            font-weight: bold;
+            line-height: 1.2rem;
+            padding-top:.5rem
+        }
+
+        #bar{
+            position: relative;
+        }
+        #bar .img{
+            width:3rem;
+            height:3rem;
+            border: 2px solid #241100;
+            color:#fff;
+            position: absolute;
+            left:.5rem;
+            top:.4rem
+        }
+        #backHomeBtn{
+            width:6.4rem;
+            height:2.15rem;
+            background-image: url('assets/backHome_btn.png');
+            position: absolute;
+            right:1rem;
+            top:1rem;
+            background-size: 6.4rem 2.15rem;
+            text-indent: -99rem;
+            overflow: hidden;
+        }
+        #name{
+            color:#000;
+            font-size:.9rem;
+            position: absolute;
+            left:4rem;
+            top:.5rem
+        }
+        #coin{
+            position: absolute;
+            left:4rem;
+            top:1.9rem;
+            height:1.575rem;
+            color:#fff;
+            background-image: url('assets/coin.png');
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            text-indent: 1.8rem;
+            line-height: 1.5rem;
+        }
+
+    </style>
+
+</head>
+<body onload="loaded()">
+    <div id="prize">
+        <p style="text-align: center;color:#fff;font-size:.9rem;padding-top:2.5rem">奖品以实物为主</p>
+        <div id="wrapper">
+        <div id="scroller">
+            <ul id="ul">
+                <li class="sull" id="tap">
+                    <div class="img"><span>已兑换</span></div>
+                    <div class="prizeContent">请到喜马拉雅山顶峰凭借手机号领取奖品</div>
+                </li>
+                <li>
+                    <div class="img"><img src="assets/img.jpeg" width="100%" height="100%" alt=""/></div>
+                    <div class="prizeContent">
+                        <p class="pr_tit">奖品名称：</p>
+                        <p class="pr_name">真爱吊坠（金花生）</p>
+                        <p>需要金币：50000</p>
+                        <p>奖品数量2/2</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img"><img src="assets/img.jpeg" width="100%" height="100%" alt=""/></div>
+                    <div class="prizeContent">
+                        <p class="pr_tit">奖品名称：</p>
+                        <p class="pr_name">真爱吊坠（金花生）</p>
+                        <p>需要金币：50000</p>
+                        <p>奖品数量2/2</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img"><img src="assets/img.jpeg" width="100%" height="100%" alt=""/></div>
+                    <div class="prizeContent">
+                        <p class="pr_tit">奖品名称：</p>
+                        <p class="pr_name">真爱吊坠（金花生）</p>
+                        <p>需要金币：50000</p>
+                        <p>奖品数量2/2</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img"><img src="assets/img.jpeg" width="100%" height="100%" alt=""/></div>
+                    <div class="prizeContent">
+                        <p class="pr_tit">奖品名称：</p>
+                        <p class="pr_name">真爱吊坠（金花生）</p>
+                        <p>需要金币：50000</p>
+                        <p>奖品数量2/2</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img"><img src="assets/img.jpeg" width="100%" height="100%" alt=""/></div>
+                    <div class="prizeContent">
+                        <p class="pr_tit">奖品名称：</p>
+                        <p class="pr_name">真爱吊坠（金花生）</p>
+                        <p>需要金币：50000</p>
+                        <p>奖品数量2/2</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img"><img src="assets/img.jpeg" width="100%" height="100%" alt=""/></div>
+                    <div class="prizeContent">
+                        <p class="pr_tit">奖品名称：</p>
+                        <p class="pr_name">真爱吊坠（金花生）</p>
+                        <p>需要金币：50000</p>
+                        <p>奖品数量2/2</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+    <div id="bar">
+        <div class="img"><img src="assets/img.jpeg" width="100%" height="100%" alt=""/></div>
+        <div id="name">这么长的昵称</div>
+        <div id="coin">99999</div>
+        <a href="../game.html" id="backHomeBtn">回到首页</a>
+    </div>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 20 * (clientWidth / 375) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</body>
+</html>

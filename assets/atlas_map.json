@@ -1,0 +1,52 @@
+{"frames": [
+
+{
+	"filename": "farm_btn.png",
+	"frame": {"x":2,"y":2,"w":355,"h":276},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":355,"h":276},
+	"sourceSize": {"w":355,"h":276}
+},
+{
+	"filename": "hospital_btn.png",
+	"frame": {"x":329,"y":340,"w":310,"h":302},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":310,"h":302},
+	"sourceSize": {"w":310,"h":302}
+},
+{
+	"filename": "market_btn.png",
+	"frame": {"x":2,"y":565,"w":314,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":314,"h":207},
+	"sourceSize": {"w":314,"h":207}
+},
+{
+	"filename": "school_btn.png",
+	"frame": {"x":2,"y":280,"w":325,"h":283},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":325,"h":283},
+	"sourceSize": {"w":325,"h":283}
+},
+{
+	"filename": "supermarket_btn.png",
+	"frame": {"x":359,"y":2,"w":333,"h":336},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":333,"h":336},
+	"sourceSize": {"w":333,"h":336}
+}],
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "atlas_map.png",
+	"format": "RGBA8888",
+	"size": {"w":774,"h":774},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:604d1626d8d27c5fb98868b22743678b$"
+}
+}

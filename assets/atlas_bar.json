@@ -1,0 +1,36 @@
+{"frames": [
+
+{
+	"filename": "bar.png",
+	"frame": {"x":2,"y":2,"w":694,"h":164},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":694,"h":164},
+	"sourceSize": {"w":694,"h":164}
+},
+{
+	"filename": "coin.png",
+	"frame": {"x":698,"y":90,"w":64,"h":63},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":63},
+	"sourceSize": {"w":64,"h":63}
+},
+{
+	"filename": "toCoin_btn.png",
+	"frame": {"x":698,"y":2,"w":256,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":86},
+	"sourceSize": {"w":256,"h":86}
+}],
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "atlas_bar.png",
+	"format": "RGBA8888",
+	"size": {"w":956,"h":168},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7ef36bb1cf3bc826a83540b8b7fc4b6b$"
+}
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="GBK">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	<title>Phaser</title>
+    <style>
+        *{margin:0;padding:0}
+        html, body
+        {
+            -webkit-text-size-adjust:none;
+            overflow: hidden;
+            height:100%;
+        }
+    </style>
+    <script src="phaser.2.4.4.min.js"></script>
+    <script src="Boot.js"></script>
+    <script src="Preloader.js"></script>
+    <script src="UI.js"></script>
+    <script src="Map.js"></script>
+    <script src="Farm.js"></script>
+    <script src="Market.js"></script>
+    <script src="Supermarket.js"></script>
+    <script src="School.js"></script>
+    <script src="Hospital.js"></script>
+</head>
+<body style="background-color: #000">
+
+<script>
+
+    var user = {
+        headerImg : 'http://wx.qlogo.cn/mmopen/SLlAFnResBZBQCwRXLrLOrs9k3dwmqIsEm0nDoZbB6Rhs5T04NTFU8rib3Hf4xwN8OHW4FX56rmNNe5tztq4dicq7pBcof0Pz3/0',
+        name : '这么长的昵称',
+        coin : 22256, //金币数量
+        fruits : 0, //果实数量
+        sell : 30, //卖出果实数量
+        getcoin : 9999, //获得金币数量
+        fall : true, //是否生病
+        state : 2 //生长状态
+    };
+
+    var game = new Phaser.Game(750, 1206, Phaser.CANVAS, 'game');
+    game.state.add('Boot', MyGame.Boot);
+    game.state.add('Preloader', MyGame.Preloader);
+    game.state.add('UI', MyGame.UI);
+    game.state.add('Map', MyGame.Map);
+    game.state.add('Farm', MyGame.Farm);
+    game.state.add('Market', MyGame.Market);
+    game.state.add('Supermarket', MyGame.Supermarket);
+    game.state.add('School', MyGame.School);
+    game.state.add('Hospital', MyGame.Hospital);
+    game.state.start('Boot');
+</script>
+<!--<script src="inpMusic.js"></script>-->
+</body>
+</html>

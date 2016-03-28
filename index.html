@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="GBK">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+    <title>我的农场</title>
+    <style>
+        *{margin:0;padding:0}
+        html, body {
+            height: 100%;
+            -webkit-text-size-adjust:none;
+        }
+        body
+        {
+            font-family: "Heiti SC","Droid Sans","Helvetica Neue","Microsoft YaHei",Helvetica,Arial,sans-serif;;
+            color:#4e4e4e;
+            margin: 0;
+            padding: 0;
+            background-image: url('assets/index_bg.jpg');
+            background-size: cover;
+        }
+        #tit{
+            width:14.75rem;
+            height:10.525rem;
+            background-image: url('assets/tit.png');
+            background-size: 14.75rem 10.525rem;
+            margin:0 auto;
+            position: relative;
+            top:2rem
+        }
+        #from{
+            text-align: center;
+            padding-top:3rem
+        }
+        #from input{
+            border-radius: .5rem;
+            border:.1rem solid #000;
+            width:11.5rem;
+            height:1.75rem;
+            text-indent: .2rem;
+            font-size:.8rem
+        }
+        #text{
+            text-align: center;
+            color:#fff;
+            font-family: "Microsoft YaHei";
+            font-size:.8rem;
+            padding-top:.3rem
+        }
+        #start-game,#rule-btn{
+            text-align: center;
+        }
+        #start-game a{
+            display: inline-block;
+            width:9.05rem;
+            height:2.725rem;
+            background-image: url('assets/start-game.png');
+            background-size: 9.05rem 2.725rem;
+            margin:1rem 0 .5rem 0;
+        }
+        #rule-btn{
+            width:9.05rem;
+            height:2.725rem;
+            background-image: url('assets/rule-btn.png');
+            background-size: 9.05rem 2.725rem;
+            margin:0 auto
+        }
+        #rule-win{
+            width:15.925rem;
+            height:17.75rem;
+            background-image: url('assets/rule_win.png');
+            background-size: 15.925rem 17.75rem;
+            position: absolute;
+            left:50%;
+            margin-left:-7.9625rem;
+            top:50%;
+            margin-top:-8.875rem;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="tit"></div>
+    <div id="from"><input type="text" placeholder="请输入手机号"/></div>
+    <p id="text">欢迎来到碧桂园·欧洲城魔法农场，<br />快来领取一份种子吧~</p>
+    <div id="start-game"><a href="game.html"></a></div>
+    <div id="rule-btn"></div>
+
+    <div id="rule-win"></div>
+
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 20 * (clientWidth / 375) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+
+        var ruleBtn = document.getElementById('rule-btn');
+        var ruleWin = document.getElementById('rule-win');
+        ruleBtn.addEventListener('touchend',function(){
+            ruleWin.style.display = 'block';
+        },false)
+
+        ruleWin.addEventListener('touchend',function(){
+            ruleWin.style.display = 'none';
+        },false)
+
+    </script>
+</body>
+</html>
